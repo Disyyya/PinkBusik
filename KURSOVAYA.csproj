@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5D24828-1ED5-4F71-8E81-21044C55DDC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KURSOVAYA</RootNamespace>
+    <AssemblyName>KURSOVAYA</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.3.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>packages\QRCoder.1.4.3\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Avtobus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avtobus.Designer.cs">
+      <DependentUpon>Avtobus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilet.Designer.cs">
+      <DependentUpon>Bilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase.cs" />
+    <Compile Include="emAvtobus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emAvtobus.Designer.cs">
+      <DependentUpon>emAvtobus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emBilet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emBilet.Designer.cs">
+      <DependentUpon>emBilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emMainForm.Designer.cs">
+      <DependentUpon>emMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emPasahir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emPasahir.Designer.cs">
+      <DependentUpon>emPasahir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emReisy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emReisy.Designer.cs">
+      <DependentUpon>emReisy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emVoditel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emVoditel.Designer.cs">
+      <DependentUpon>emVoditel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gost.Designer.cs">
+      <DependentUpon>gost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reisy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reisy.Designer.cs">
+      <DependentUpon>Reisy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passahir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passahir.Designer.cs">
+      <DependentUpon>Passahir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sotrydniki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sotrydniki.Designer.cs">
+      <DependentUpon>Sotrydniki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Voditel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Voditel.Designer.cs">
+      <DependentUpon>Voditel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Avtobus.resx">
+      <DependentUpon>Avtobus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilet.resx">
+      <DependentUpon>Bilet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emAvtobus.resx">
+      <DependentUpon>emAvtobus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emBilet.resx">
+      <DependentUpon>emBilet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emMainForm.resx">
+      <DependentUpon>emMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emPasahir.resx">
+      <DependentUpon>emPasahir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emReisy.resx">
+      <DependentUpon>emReisy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emVoditel.resx">
+      <DependentUpon>emVoditel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gost.resx">
+      <DependentUpon>gost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reisy.resx">
+      <DependentUpon>Reisy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passahir.resx">
+      <DependentUpon>Passahir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sotrydniki.resx">
+      <DependentUpon>Sotrydniki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Voditel.resx">
+      <DependentUpon>Voditel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0eba09763fe78531cf6b101e8fae7e36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QyNRBjimX2Q.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3b8593966cc086fd5ed73e46c4ea04c.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
